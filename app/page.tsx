@@ -1,10 +1,14 @@
-import React from 'react'
+import Home from "./components/home/home"
+
+
+
 
 function page() {
   return (
-    <div >
-      Hiiii Mohammed!!!!!!!!!!!!!!
-    </div>
+   <div>
+     <Home />   
+   </div>
+    
   )
 }
 
