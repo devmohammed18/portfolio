@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image';
@@ -8,40 +9,46 @@ import { FaTwitterSquare } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import styles from './home.module.css'
 import image_profil from '../../../public/images/imageprofil.jpg'
-
+import ParticlesBackground from '../particlesbackground/particlesBackground'
 function Home() {
   return (
-    <div className={styles.imformation_image_profil}>
-        
-        <div className={styles.imageprofil}>
-            <Image className='rounded-full' src={image_profil} alt='imageprofil'   />
-        </div>
 
-        <div className={styles.information}>
-            <span className='text-5xl text-blue-400 sm:text-3xl sm:text-red-400 '>Hi there, I'm</span>
-            <h1 className=' text-6xl  font-bold text-white sm:text-4xl' > Mohammmed</h1>
-            <span className='text-4xl text-blue-300 sm:text-3xl '> Frante web devloper</span>
-            <ul>
-                <li className={styles.btn_resume}> Resume</li>
-                <li className={styles.social_links}>
-                    
-                    <Link href='#' className={styles.social}>< FaFacebook style={{fontSize:30}}/></Link>
-                    <Link href='#' className={styles.social}><FaSquareInstagram style={{fontSize:30}}/></Link>
-                    <Link href='#' className={styles.social}><FaTwitterSquare style={{fontSize:30}} /></Link>
-                    <Link href='#' className={styles.social}><FaGithub style={{fontSize:30}} /></Link>
-                    
-                </li>
-            </ul>
-        </div>
+    <div className=''>
+       
+       
+        <div className={styles.imformation_image_profil}>
+        <ParticlesBackground  />
+            <div className={styles.imageprofil}>
+                
+                <Image className='rounded-full z-10 w-72 h-72 sm:w-40 sm:h-40 md:w-50 md:h-50' src={image_profil} alt='imageprofil'   />
+            </div>
+
+            <div className={styles.information}>
+                <span className=' text-xl text-blue-400  text-red-400 md:text-xl sm:text-lg lg:text-xl '>Hello, my name is</span>
+                <h1 className=' text-4xl  font-bold text-white md:text-4xl sm:text-2xl lg:text-4xl' > Mohammmed </h1>
+                <span className='text-xl text-white md:text-xl sm:text-lg lg:text-xl '> L'm a <span className='text-red-600 text-2xl'>Frante web</span> devloper</span>
+                <ul>
+                    <li className={styles.btn_resume}> Download CV</li>
+                    <li className={styles.social_links}>
+                        
+                        <Link href='#' className={styles.social}>< FaFacebook style={{fontSize:30}}/></Link>
+                        <Link href='#' className={styles.social}><FaSquareInstagram style={{fontSize:30}}/></Link>
+                        <Link href='#' className={styles.social}><FaTwitterSquare style={{fontSize:30}} /></Link>
+                        <Link href='#' className={styles.social}><FaGithub style={{fontSize:30}} /></Link>
+                        
+                    </li>
+                </ul>
+            </div>
+
+                
 
             
-
+                
         
-            
-      
 
 
-    </div>
+        </div>
+    </div>    
   )
 }
 

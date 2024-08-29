@@ -3,8 +3,10 @@
 display: flex;
 flex-direction: row-reverse;
 justify-content:space-between;
-background-color: rgb(0, 0, 255);
-height: 100vh;
+background-color:hsl(240, 100%, 10%); 
+/* background-color: rgb(0, 0, 255); */
+ height: 100vh; 
+
 align-items: center;
 
 }
@@ -22,6 +24,7 @@ align-items: center;
 
 
 .imageprofil{
+position:relative;
 margin-right:100px;    
 width:400px;
 height:400px;
@@ -29,29 +32,34 @@ height:400px;
 height: 60%; */
 display: flex;
 justify-content: center;
-
+align-items: center;
 border: 1px solid red;
-border-radius: 50%;
+transition: .5s;
 }
-
+.imageprofil:hover{
+   
+}
 
 .btn_resume:hover{
     cursor: pointer;
-    border: 1px solid white;
+    border: 1px solid red;
+    background-color:hsl(240, 100%, 10%);
 
 }
 
 .btn_resume{
-    padding:10px 10px;
+    padding:9px 10px;
     margin-top:40px ;
-    color: rgb(17, 0, 253);
-    background-color: aliceblue;
-    border-radius: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 17px;
+    color: white;
+    background-color: red;
+    border-radius: 20px;
+    text-align: center;
+    /* display: flex; */
+    /* justify-content: center;
+    align-items: center; */
+    font-size: 15px;
     font-weight:bolder;
+    width: 30%;
 }
 .social_links{
 
@@ -75,16 +83,20 @@ background-color:rgb(255, 255, 255);
     font-size: 40px;
 }
 
-@media (max-width:920px) {
+/******************  @media ***************** 
+
+*********************************************/
+@media (max-width:540px) {
 
    .imformation_image_profil{
 
     display: flex;
+    flex-direction: column;
     justify-content:center;
     align-items: center;
-    flex-wrap:wrap; 
-    gap: 10px;
-    border: 1px solid red ;
+    
+    gap: 5px;
+    border: 2px solid red ;
     margin-left: 0px;
      
    } 
@@ -106,11 +118,72 @@ background-color:rgb(255, 255, 255);
 
    }
   
-@media (max-width:1024){
+   .btn_resume{
 
-   
+    /* padding:9px 10px;
+    margin-top:40px ;
+    color: white;
+    background-color: red;
+    border-radius: 20px;
+    text-align: center; */
+    /* display: flex; */
+    /* justify-content: center;
+    align-items: center; */
+    font-size: 13px;
+    font-weight:bolder;
+    width: 45%;
+
+   }
+
+
+
+    
 }
 
+/***********   max-width 1024 ************/
 
+@media (max-width:1024px) {
+
+
+    .imformation_image_profil{
+
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+        
+        gap: 5px;
+        border: 2px solid red ;
+        margin-left: 0px;
+         
+       } 
+    
+       .information{
+        display: flex;
+        flex-direction: column;
+       justify-content: center;
+       align-items: center;
+        margin-left: 0px;
+        width: 100%;
+        
+    
+       }
+       .imageprofil{
+        
+        margin-right: 0px;
+        width: 450px;
+        height: 450px;
+    
+       }
+      
+       .btn_resume{
+    
+       
+        font-size: 13px;
+        font-weight:bolder;
+        width: 45%;
+    
+       }
+    
     
 }

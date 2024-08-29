@@ -2,6 +2,8 @@
 
 
 import Navbar from './components/navbar/navbar'
+import ParticlesBackground from './components/particlesbackground/particlesBackground'
+
 import './globals.css'
 
 export default function RootLayout({
@@ -14,10 +16,10 @@ export default function RootLayout({
     return (
       <html lang="en">
 
-        <body>
+        <body >
           <Navbar />
           {children}
-          
+         
         </body>
 
       </html>

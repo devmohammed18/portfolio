@@ -9,28 +9,28 @@
     margin: auto;
     padding: 0px 40px;
     height: 70px;
-     /* background-color: rgb(205, 205, 205);  */
-  background-color: rgb(255, 255, 255);
+   background-color:hsl(240, 100%, 10%);
+  /* background-color: rgb(255, 255, 255); */
     border-bottom: 4px solid rgb(0, 0, 0);
-    
+   /* z-index: 99;  */
 }
 
 .menu{
     display: none;
-    font-size: 25px;
-    font-weight: bold;
+    font-size: 30px;
+    font-weight:bolder;
+    color: white;
 }
 .logo{
  margin-left: 60px;
  font-size: 25px;
  font-weight: bold;
- color:rgb(0, 4, 255);
+ color:white;
 }
 .navlinks{
  margin-right: 60px;   
-display: flex;
-
-gap: 15px;
+ display: flex;
+ gap: 15px;
 
 }
 
@@ -39,32 +39,54 @@ gap: 15px;
     text-decoration: none;
 }
 .link{
-    color:rgb(0, 4, 255);
+    /* color:rgb(0, 4, 255); */
+    color:white;
     font-size: 17px;
     font-weight:bolder;
     text-decoration: none;
     padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
+   
 }
 .link:hover{
   
-  border-bottom:2px solid rgb(0, 4, 255);
-  
-  transition: all .5s ease-out;
+  border-bottom:2px solid red;
+  cursor: pointer;
+  color: red;
+   transition: all 0.5s ease-out; 
 }
 .border_bottom_link{
  border-bottom: 2px solid rgb(0, 4, 255);
 }
 
-.link:hover{
-cursor: pointer;
-color: rgb(0, 4, 255);
 
-}
 @media screen and (max-width:870px) {
 
-.menu{
 
+.navbar{
+    
+   
+    z-index: 99;  
+    ;
+}    
+.menu_logo{
+
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+ 
+}
+
+
+.menu{
+  
     display: block;
+
+}
+.menu:hover{
+    cursor: pointer;
+    color: red;
+    transition: .30s;
 }
 
 .navLinksWrapper{
@@ -72,6 +94,7 @@ color: rgb(0, 4, 255);
     left:0px;
     top:100%;
     width: 100%;
+    height: 100vh;
     background-color:inherit;
     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); */
@@ -79,10 +102,10 @@ color: rgb(0, 4, 255);
 }
 
 .navlinks{
-    margin-left: 40px;
+    /* margin-left: 40px; */
     display: flex;
     flex-direction: column;
-    gap:15px;
+    
 }
 
 .link{margin-top:10px;
@@ -90,11 +113,14 @@ color: rgb(0, 4, 255);
     font-size: 25px;
     font-weight:bolder;
     text-decoration: none; 
-    background-color: rgb(0, 0, 255); 
+    background-color:red ;
+     width: 100vw;
+    text-align: center;
     padding-left: 0px;
     padding-right: 0px;
-     text-align: center; 
-}
+     
+   
+};
 
     
 }
