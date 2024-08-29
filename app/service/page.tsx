@@ -6,37 +6,37 @@ async function Service() {
 
 
 
-async function getService(){
+// async function getService(){
 
-      try{
+//       try{
 
-        await new Promise (resolve=>setTimeout(resolve,4000))
-        const users= await fetch('http://localhost:3000/api/testservice',{
-          method:'GET'
-          } )
+//         await new Promise (resolve=>setTimeout(resolve,4000))
+//         const users= await fetch('http://localhost:3000/api/testservice',{
+//           method:'GET'
+//           } )
           
-          if(!users.ok){
+//           if(!users.ok){
           
-            throw new Error('failed to fetch data')
+//             throw new Error('failed to fetch data')
 
-          }
+//           }
           
 
-        return users.json()
+//         return users.json()
 
-}catch(error){
-  console.log('errrrrror....................!')
-}
+// }catch(error){
+//   console.log('errrrrror....................!')
+// }
 
 
-}
-  const Users= await getService()
-  console.log(Users)
+// }
+//   const Users= await getService()
+//   console.log(Users)
   return (
     <div>
      <h1> Hi Service.................! </h1>
 
-     <Suspense fallback={<Loading />}>
+     {/* <Suspense fallback={<Loading />}>
       {Users.map((user:any)=>(
         
           <div key={user.id}>
@@ -47,7 +47,7 @@ async function getService(){
          
         ))} 
      
-     </Suspense>
+     </Suspense> */}
 
 
     </div>
