@@ -54,7 +54,7 @@ if(Object.keys(errors).length-1<=0){
 
 
  try {
-  const response = await fetch('https://portfolio-f378.vercel.app/api/send', {
+  const response = await fetch('/api/send', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
