@@ -36,22 +36,30 @@ setFormData(data)
 }
 
 const handleLoading=()=>{
-  if(Object.keys(errors).length<=0){
+ //if(Object.keys(errors).length === 0){
     setLoading(true)
     setTimeout(()=>{setLoading(false), setFormData({name:"",email:"",object:"",
-  message:"",})},7000)
-  }
+  message:"",})},3000)
+ // }
 
 
 }
 const handleSubmit= async(e)=>{
  e.preventDefault();
+ 
+ const errors_validation=validate(formData);
+ console.log('----------------------------------------------')
+ console.log(errors_validation)
+ console.log(Object.keys(errors_validation).length)
+ 
+ if(Object.keys(errors_validation).length>0){
+  setErrors(errors_validation)
+ }
+  console.log('Errors======>:',errors)
 
- setErrors(validate(formData));
- console.log(errors)
- console.log('size Errors:',Object.keys(errors).length)
-if(Object.keys(errors).length-1<=0){
 
+if(Object.keys(errors_validation).length=== 0){
+ 
 
  try {
   const response = await fetch('/api/send', {
@@ -82,7 +90,9 @@ if(Object.keys(errors).length-1<=0){
 } catch (error) {
   setErrors(`Error: ${error.message}`);
 }
+
 }//if 
+
  };
   return (
     <div className='bg-blue-800 h-screen flex  flex-col items-center  '>

@@ -1,51 +1,72 @@
 
+/* :root{
+ --primary-color:hsl(240, 100%, 10%);
+
+} */
+.banner{
+    background-color:hsl(240, 100%, 50%); 
+    
+}
 .imformation_image_profil{
-display: flex;
-flex-direction: row-reverse;
-justify-content:space-between;
-background-color:hsl(240, 100%, 10%); 
-/* background-color: rgb(0, 0, 255); */
- height: 100vh; 
+ display: flex;
+ flex-direction: row-reverse;  
+ justify-content:space-between; 
+
+
+
+
+/* background-color:hsl(240, 100%, 10%);  */
+background-color:hsl(240, 100%, 50%); 
+
+width: 100%;
+height: 100vh; 
 
 align-items: center;
 
 }
 
 .information{
-    margin-left: 100px;
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* border:1px solid black; */
-    width: 40%;
+    /* border:1px solid red;  */
+    width: 100%;
     height: 60%;
     gap: 15px;
+    padding: 30px 60px;
+
 }
 
 
 .imageprofil{
+margin-right: 96px;
 position:relative;
-margin-right:100px;    
-width:400px;
-height:400px;
-/* width: 40%;
-height: 60%; */
+border: 2px solid red;
+background-color: brown;
+border-radius: 50%;
+width:30%;
+aspect-ratio: 1/1;
+
 display: flex;
 justify-content: center;
 align-items: center;
-border: 1px solid red;
+/* border: 1px solid red; */
+
 transition: .5s;
 }
 .imageprofil:hover{
-   
+    border: 2px solid white;  
 }
 
 .btn_resume:hover{
     cursor: pointer;
     border: 1px solid red;
-    background-color:hsl(240, 100%, 10%);
+    background-color:hsl(240, 100%, 50%); 
+   
 
 }
+
 
 .btn_resume{
     padding:9px 10px;
@@ -54,39 +75,39 @@ transition: .5s;
     background-color: red;
     border-radius: 20px;
     text-align: center;
-    /* display: flex; */
-    /* justify-content: center;
-    align-items: center; */
-    font-size: 15px;
+  
+    font-size: 10px;
     font-weight:bolder;
-    width: 30%;
+    width: 40%;
 }
 .social_links{
 
     display: flex;
-    justify-self: start;
+    flex-direction: column;
+    justify-items: center;
+    padding: 15px 5px;
     gap: 15px;
-    margin-top: 50px;
+    border:1px solid white;
+    border-radius:20px;
+    box-shadow: 2px 5px 3px;
 }
 
 .social{
-width: 50px;
-height: 50px;
+width: 25px;
+height: 25px;
+
 display: flex;
 justify-content: center;
 align-items: center;
 border-radius: 50%;
 background-color:rgb(255, 255, 255);
 }
-.styles.icon{
-   
-    font-size: 40px;
-}
+
 
 /******************  @media ***************** 
 
 *********************************************/
-@media (max-width:540px) {
+@media (max-width:570px) {
 
    .imformation_image_profil{
 
@@ -96,54 +117,55 @@ background-color:rgb(255, 255, 255);
     align-items: center;
     
     gap: 5px;
-    border: 2px solid red ;
+    
     margin-left: 0px;
-     
+    width: 100%;
    } 
 
    .information{
     display: flex;
-   justify-content: center;
+    justify-content: center;
    align-items: center;
     margin-left: 0px;
-    width: 80%;
-    
-
+    gap:2px;
+    width: 100%;
+   
    }
+
    .imageprofil{
     
     margin-right: 0px;
-    width: 250px;
-    height: 250px;
+    width:300px;
+    height: 300px;
+    background-color: brown;
+    border:2px solid red;
+    border-radius: 50%;
 
+   }
+
+   .imageprofil:hover{
+    border:2px solid rgb(255, 255, 255);
    }
   
    .btn_resume{
-
-    /* padding:9px 10px;
-    margin-top:40px ;
-    color: white;
-    background-color: red;
-    border-radius: 20px;
-    text-align: center; */
-    /* display: flex; */
-    /* justify-content: center;
-    align-items: center; */
-    font-size: 13px;
+    
+    font-size: 15px;
     font-weight:bolder;
-    width: 45%;
+    width: 70%;
 
    }
-
+.social_links{
+    display: flex;
+    flex-direction: row;
+}
 
 
     
 }
 
 /***********   max-width 1024 ************/
-
-@media (max-width:1024px) {
-
+/* (min-width:571px)and(max-width:)  */
+@media (min-width:571px) and (max-width:920px){
 
     .imformation_image_profil{
 
@@ -153,7 +175,7 @@ background-color:rgb(255, 255, 255);
         align-items: center;
         
         gap: 5px;
-        border: 2px solid red ;
+        
         margin-left: 0px;
          
        } 
@@ -165,7 +187,9 @@ background-color:rgb(255, 255, 255);
        align-items: center;
         margin-left: 0px;
         width: 100%;
-        
+        height: 100%;
+        gap:20px;
+      
     
        }
        .imageprofil{
@@ -179,11 +203,27 @@ background-color:rgb(255, 255, 255);
        .btn_resume{
     
        
-        font-size: 13px;
+        font-size: 20px;
         font-weight:bolder;
-        width: 45%;
-    
+        width: 60%;
+       
        }
+
+       .social_links{
+        display: flex;
+        flex-direction: row;
+       }
+
+       .social{
+        width: 50px;
+        height: 50px;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        background-color:rgb(255, 255, 255);
+        }
     
     
-}
+} 

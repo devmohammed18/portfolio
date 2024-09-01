@@ -15,5 +15,5 @@ export default function validate(value){
     if(value.message===""){
         errors.message="Message required"
     }
-    return errors    
+    return  errors    
 }

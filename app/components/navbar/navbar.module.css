@@ -7,11 +7,14 @@
     justify-content:space-between;
     align-items: center;
     margin: auto;
-    padding: 0px 40px;
+    padding: 30px 40px 30px 40px ;
     height: 70px;
-   background-color:hsl(240, 100%, 10%);
+    border: 1px solid white;
+    /* background-color:hsl(240, 100%, 10%);  */
+    /* background-color:blue; */
+    background-color:hsl(240, 100%, 50%); 
   /* background-color: rgb(255, 255, 255); */
-    border-bottom: 4px solid rgb(0, 0, 0);
+    /* border-bottom: 4px solid rgb(0, 0, 0); */
    /* z-index: 99;  */
 }
 
@@ -22,20 +25,20 @@
     color: white;
 }
 .logo{
- margin-left: 60px;
+ margin-left: 90px;
  font-size: 25px;
- font-weight: bold;
+
  color:white;
 }
 .navlinks{
- margin-right: 60px;   
+ margin-right: 90px;   
  display: flex;
  gap: 15px;
 
 }
 
 .link_logo{
-    
+    font-family:monospace;
     text-decoration: none;
 }
 .link{
@@ -62,7 +65,16 @@
 
 @media screen and (max-width:870px) {
 
+.logo{
+        margin-left: 60px;
+       
+       }
 
+ .navlinks{
+        margin-right: 60px;   
+     
+       
+       }
 .navbar{
     
    
@@ -123,4 +135,69 @@
 };
 
     
+}
+
+/**********************************************
+            screen max-width:2024px
+*****************************/
+@media  (max-width:920px) {
+    .navbar{
+    
+   
+        z-index: 99;  
+        
+    }    
+    .menu_logo{
+    
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+     
+    }
+    
+    
+    .menu{
+      
+        display: block;
+    
+    }
+    .menu:hover{
+        cursor: pointer;
+        color: red;
+        transition: .30s;
+    }
+    
+    .navLinksWrapper{
+        position:absolute;
+        left:0px;
+        top:100%;
+        width: 100%;
+        height: 100vh;
+        background-color:inherit;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); */
+        transition: all .5s ease-in;
+    }
+    
+    .navlinks{
+        /* margin-left: 40px; */
+        display: flex;
+        flex-direction: column;
+        
+    }
+    
+    .link{margin-top:10px;
+       color: white;
+        font-size: 25px;
+        font-weight:bolder;
+        text-decoration: none; 
+        background-color:red ;
+         width: 100vw;
+        text-align: center;
+        padding-left: 0px;
+        padding-right: 0px;
+         
+       
+    };
+      
 }

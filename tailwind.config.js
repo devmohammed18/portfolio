@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode:'class',
   content: [
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -11,8 +12,15 @@ module.exports = {
   theme: {
     
     extend: {
-      background_home:{
-        'home-bg':'hsl(240, 100%, 10%)',
+
+      fontFamily:{
+      Anton_init:['var(--font-Anton_init)'],
+      bungee:['var(--font-bungeeinit)'],
+      },
+
+      colors:{
+        bg_dark:'hsl(240, 100%, 10%)',
+        bg_light:'hsl(240, 100%, 50%)'
       },
 
       screens: {
