@@ -65,7 +65,7 @@ if(Object.keys(errors_validation).length=== 0){
  
 
  try {
-  const response = await fetch('http://localhost:3000/api/send', {
+  const response = await fetch('/api/send', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
