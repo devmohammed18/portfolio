@@ -28,7 +28,7 @@ export default function RootLayout({
     return (
       <html lang="en">
 
-        <body className= {`${Anton_init.variable} ${bungee_init.variable} ` }>
+        <body className= {`${Anton_init.variable} ${bungee_init.variable} bg-slate-500 h-svh ` }>
           <Navbar />
           {children}
          

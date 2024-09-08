@@ -1,4 +1,4 @@
-import { LiaPencilRulerSolid } from "react-icons/lia"
+
 import Home from "./components/home/home"
 
 
@@ -8,7 +8,7 @@ import Home from "./components/home/home"
 function page() {
   return (
     
-   <div>
+   <div >
      <Home />   
    </div>
     

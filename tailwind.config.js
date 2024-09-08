@@ -13,6 +13,11 @@ module.exports = {
     
     extend: {
 
+      screens: {
+        'portrait': {'raw': '(orientation: portrait)'},
+        'landscape': {'raw': '(orientation: landscape)'},
+    },
+
       fontFamily:{
       Anton_init:['var(--font-Anton_init)'],
       bungee:['var(--font-bungeeinit)'],
@@ -20,7 +25,8 @@ module.exports = {
 
       colors:{
         bg_dark:'hsl(240, 100%, 10%)',
-        bg_light:'hsl(240, 100%, 50%)'
+        bg_light:'hsl(240, 100%, 50%)',
+        
       },
 
       screens: {
