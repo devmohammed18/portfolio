@@ -39,11 +39,11 @@ setFormData(data)
 }
 
 const handleLoading=()=>{
- //if(Object.keys(errors).length === 0){
+ 
     setLoading(true)
     setTimeout(()=>{setLoading(false), setFormData({name:"",email:"",object:"",
   message:"",})},3000)
- // }
+
 
 
 }
@@ -65,7 +65,7 @@ if(Object.keys(errors_validation).length=== 0){
  
 
  try {
-  const response = await fetch('/api/send', {
+  const response = await fetch('http://localhost:3000/api/send', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -136,29 +136,29 @@ if(Object.keys(errors_validation).length=== 0){
               <form onSubmit={handleSubmit} >
                 <Suspense fallback={<LuRefreshCw className="animate-spin  z-10 ease-in h-5 w-50 mr-3" />} >
                   <div className="relative" >
-                    <input type="text" name="name" onChange={handleChange} value={formData.name} className='w-full  relative  mb-5 p-3 outline-none border-2 border-solid border-black rounded-lg  text-red-900'  placeholder={errors.name ?errors.name :'Enter your Name'}/>
+                    <input type="text" name="name" onChange={handleChange} value={formData.name} className='w-full  relative  mb-5 p-3 outline-none border-2 border-solid border-black rounded-lg  text-bg_light dark:text-bg_dark'  placeholder='Enter your Name'/>
                     {errors.name && <p className='text-red-500 text-xs font-bold absulte flex  border-red-900 absolute p-1 top-12 '>* {errors.name}</p>}
                   </div>
 
                   <div className="relative">
-                    <input type="email" name="email" onChange={handleChange} value={formData.email} className='w-full mb-5  p-3 outline-none border-none rounded-lg  ' placeholder='Enter your Email'/>
+                    <input type="email" name="email" onChange={handleChange} value={formData.email} className='w-full mb-5  p-3 outline-none border-none rounded-lg  text-bg_light dark:text-bg_dark ' placeholder='Enter your Email'/>
                     {errors.email && <p className='text-red-500 text-xs font-bold absulte flex  border-red-900 absolute p-1 top-12'>*{errors.email}</p>}
                   </div>
                   
                   
                   <div className="relative">
-                    <input type="text" name="object" onChange={handleChange} value={formData.object} className='w-full mb-5  p-3 outline-none border-none rounded-lg ' placeholder='Enter your Object'/>
+                    <input type="text" name="object" onChange={handleChange} value={formData.object} className='w-full mb-5  p-3 outline-none border-none rounded-lg  text-bg_light dark:text-bg_dark' placeholder='Enter your Object'/>
                     {errors.object && <p className='text-red-500 text-xs font-bold absulte flex  border-red-900 absolute p-1 top-12'>*{errors.object}</p>}
                   </div>
                   
                   <div className="relative">
-                      <textarea  name="message"  onChange={handleChange} value={formData.message}  className='w-full h-36 mb-5  p-4 outline-none border-none rounded-lg ' placeholder='Enter your Message...'/>
+                      <textarea  name="message"  onChange={handleChange} value={formData.message}  className='w-full h-36 mb-5  p-4 outline-none border-none rounded-lg  text-bg_light dark:text-bg_dark ' placeholder='Enter your Message...'/>
                       {errors.message && <p className='text-red-500 text-xs font-bold absulte flex  border-red-900 absolute p-1 top-36'>*{errors.message}</p>}
                   </div>
                   </Suspense> 
                   
                   <div className="flex space-x-4">
-                  <button type="submit"  className='bg-green-600 flex justify-center  w-32 p-2 rounded-lg tracking-wide bordre-none hover:bg-green-500' disabled={loading}> 
+                  <button type="submit"  className='bg-green-600 flex justify-center  w-32 p-2 rounded-lg tracking-wide bordre-none  hover:bg-green-500' disabled={loading}> 
                     
                     {loading?<LuRefreshCw className="animate-spin ease-in h-5 w-5 mr-3" />:''} <span>Submit</span> </button>
                   
