@@ -14,33 +14,6 @@ import DetailsDevloper from '../components/details_services/detailsDevloper';
 
 const [close,setClose]=useState<boolean>(false)
 
-
-// async function getService(){
-
-//       try{
-
-//         await new Promise (resolve=>setTimeout(resolve,4000))
-//         const users= await fetch('http://localhost:3000/api/testservice',{
-//           method:'GET'
-//           } )
-          
-//           if(!users.ok){
-          
-//             throw new Error('failed to fetch data')
-
-//           }
-          
-
-//         return users.json()
-
-// }catch(error){
-//   console.log('errrrrror....................!')
-// }
-
-
-// }
-//   const Users= await getService()
-//   console.log(Users)
   return (
     <motion.div 
     initial={{y:"-1%"}}

@@ -11,8 +11,7 @@ function Skills() {
     
  const [toggle,setToggle]=useState(false)
  const [toggle1,setToggle1]=useState(false)
- const pathname=usePathname();
- const router=useRouter();
+
 
   return (
     <div className=' sm:flex  sm:items-centre min-h-lvh border-0  flex flex-wrap justify-center  items-start border-red-900 border-solid bg-bg_light dark:bg-bg_dark   text-white'>
@@ -96,7 +95,7 @@ function Skills() {
            
         
         </div> 
-        {/* <motion.div animate={{x:200}} onClick={()=>{router.push('/contact')}} className="bg-red-600 p-3" > Bottun </motion.div>  */}
+       
 
     </div>
     </div>

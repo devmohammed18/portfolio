@@ -2,16 +2,15 @@
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image';
-import { FaFacebook } from "react-icons/fa6";
+
 import { FaLinkedinIn } from "react-icons/fa6";
-import { FaSquareInstagram } from "react-icons/fa6";
-import { FaTwitterSquare } from "react-icons/fa";
+
 import { FaGithub } from "react-icons/fa";
 
 import {motion} from 'framer-motion';
 import styles from './home.module.css'
 import image_profil from '../../../public/images/imageprofil.jpg'
-import ParticlesBackground from '../particlesbackground/particlesBackground'
+
 
 function Home() {
   return (
@@ -21,11 +20,11 @@ function Home() {
   
   initial={{y:"-1%"}}
   animate={{y:0}}
-  transition={{duration:0.1}}
-className={styles.banner}>
+  transition={{duration:0.1}} 
+>
   
          
-        {/* <ParticlesBackground  /> */}
+        
         <div className={`${styles.imformation_image_profil}   font-mono ease-in-out duration-500 dark:ease-in-out dark:duration-500 dark:bg-bg_dark` }>
            <div className='sm:flex-col  sm:w-full sm:gap-10 md:gap-10 w-4/5 md:flex-col md:w-full flex  flex-row-reverse justify-between items-center border-0 border-solid border-red-600'>
                 
@@ -48,8 +47,7 @@ className={styles.banner}>
                             <li className='sm:flex-row md:flex-row text-bg_light dark:text-bg_dark  flex flex-col justify-between items-center gap-5  '>
                                 
                                 <Link href='#' className={styles.social}>< FaLinkedinIn  className='text-lg sm:text-2xl md:text-4xl ' /></Link>
-                                {/* <Link href='#' className={styles.social}><FaSquareInstagram className='text-lg sm:text-lg md:text-4xl' /></Link>
-                                <Link href='#' className={styles.social}><FaTwitterSquare className='text-lg sm:text-lg md:text-4xl'  /></Link> */}
+                              
                                 <Link href='#' className={styles.social}><FaGithub className='text-lg sm:text-2xl md:text-4xl '  /></Link>
                                 
                             </li>
