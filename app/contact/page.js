@@ -104,7 +104,7 @@ if(Object.keys(errors_validation).length=== 0){
         
         <div className=" sm:w-full sm:flex-col sm:items-center flex justify-end items-start text-white w-4/5 border-0 border-solid border-red-600">
 
-          <div className="sm:w-full  bg-bg_light dark:bg-bg_dark h-full flex flex-col justify-start items-start rounded-l-lg shadow-lg  w-2/5 p-5 gap-4 border-0 border-solid border-red-600">
+          <div className="sm:w-full  bg-bg_dark dark:bg-bg_light h-full flex flex-col justify-start items-start rounded-l-lg shadow-lg  w-2/5 p-5 gap-4 border-0 border-solid border-red-600">
              <div className="flex justify-center items-center gap-2">
                   <span className="text-2xl" > <IoCallOutline /> </span>
                   <div className="flex flex-col  " >
@@ -131,7 +131,7 @@ if(Object.keys(errors_validation).length=== 0){
              </div>
           </div>
 
-          <div className='sm:w-full bg-bg_light dark:bg-bg_dark border-solid rounded-r-lg w-3/5 p-5 shadow-lg '>
+          <div className='sm:w-full bg-bg_dark dark:bg-bg_light border-solid rounded-r-lg w-3/5 p-5 shadow-lg '>
               
               <form onSubmit={handleSubmit} >
                 <Suspense fallback={<LuRefreshCw className="animate-spin  z-10 ease-in h-5 w-50 mr-3" />} >

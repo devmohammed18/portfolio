@@ -12,6 +12,7 @@ import styles from './home.module.css'
 import image_profil from '../../../public/images/imageprofil.jpg'
 
 
+
 function Home() {
   return (
 
@@ -26,9 +27,9 @@ function Home() {
          
         
         <div className={`${styles.imformation_image_profil}   font-mono ease-in-out duration-500 dark:ease-in-out dark:duration-500 dark:bg-bg_dark` }>
-           <div className='sm:flex-col  sm:w-full sm:gap-10 md:gap-10 w-4/5 md:flex-col md:w-full flex  flex-row-reverse justify-between items-center border-0 border-solid border-red-600'>
+           <div className='sm:flex-col  sm:w-full sm:gap-10 md:w-full md:gap-10 h-full w-4/5 md:flex-col  flex  flex-row-reverse justify-between items-center border-0 border-solid border-red-600'>
                 
-                <div className='sm:w-full md:w-full w-2/5 flex justify-center items-center border-0 border-solid border-red-600' >
+                <div className='sm:w-full md:w-full  w-2/5 flex justify-center items-center border-0 border-solid border-red-600' >
                     
                     <Image className='rounded-full z-10 w-64 h-64 sm:w-72 sm:h-72 md:w-96 md:h-96' src={image_profil} alt='imageprofil'   />
                 </div>
@@ -39,7 +40,7 @@ function Home() {
                             <h1 className=' text-4xl  font-bold capitalize  md:text-6xl sm:text-2xl ' > mohammmed </h1>
                             <h1 className=' text-xl px-0  capitalize md:text-3xl sm:text-lg '> i'm a <span className='text-red-600 text-2xl'>Frante web</span> devloper</h1>
                         
-                            <button className='w-2/5 sm:w-1/2 md:w-1/5 text-lg capitalize border-2 border-red-600 bg-red-700 border-solid rounded-3xl p-1 hover:bg-transparent'> contact me</button>
+                            <button onClick={()=>window.open('/pdfs/CV_Boureghida_Mohammed.pdf',"_blank")} className='w-2/5 sm:w-1/2 md:w-1/5 text-lg capitalize border-0 border-red-600 bg-red-700 border-solid rounded-3xl p-1 hover:bg-transparent'> contact me</button>
 
                         </div> 
 

@@ -1,52 +1,30 @@
 
-
 'use client';
+import { useState } from "react";
 
-import { useState, useEffect } from 'react';
-
+import SliderWork from '../components/sliderwork/sliderWork'
 const Work = () => {
-//   const [Users, setUsers] = useState([]);
-//   const [loading, setLoading] = useState(true);
-
-//   useEffect(() => {
-//     const fetchUsers = async () => {
-//       try {
-//         const response = await fetch('http://localhost:3000/api/testapi',{ next: { revalidate: 0 } });
-//         if (!response.ok) {
-//           throw new Error('Network response was not ok');
-//         }
-//         const data = await response.json();
-//         setUsers(data);
-//       } catch (error) {
-//         console.error('Error fetching data:', error);
-//       } finally {
-//         setLoading(false); // Set loading to false regardless of the outcome
-//       }
-//     };
-
-//     fetchUsers();
-//   }, []);
-
-//   if (loading) {
-//     return <div>Loading .........</div>;
-//   }
+  const [showDesc,setShowDesc]=useState<any>(0);
+  const [toggle,setToggle] =useState<boolean>(false)
 
   return (
-    <div>
-      <h1>Hi Work................!</h1>
-      {/* {Users.length > 0 ? (
-        Users.map(user => (
-          <div key={user.id}>
-            <h2>ID: {user.id}</h2>
-            <h2>Name: {user.name}</h2>
-            <h2>Username: {user.username}</h2>
-            <br />
-          </div>
-        ))
-      ) : (
-        <div>No users found</div>
-      )} */}
-    </div>
+    <div className='min-h-svh pb-20  w-full flex justify-start  border-4 border-solid border-gray-500 items-center flex-col bg-bg_light dark:bg-bgclear ease-in-out duration-500   text-white dark:bg-bg_dark ' >
+
+        <div className='flex flex-col justify-center  pt-12 pb-14 items-center capitalize' > 
+          <h1 className='text-4xl font-mono' >work </h1>
+          <span className='text-sm '>mast recent work</span>
+        </div>
+    
+        <div className=' container w-4/5 h-56  flex flex-col justify-center  border border-solid border-gray-950  mx-auto'>
+    
+      <SliderWork showDesc={showDesc} setShowDesc={setShowDesc} toggle={toggle} setToggle={setToggle} />
+    
+          
+          
+      </div>
+        
+
+ </div>
   );
 };
 

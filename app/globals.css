@@ -1,3 +1,80 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+/***********************************************
+dots the slick slider 
+*/
+.slick-dots li button:before {
+   
+    font-size: 15px !important;
+    color: rgb(243, 243, 243) !important;
+    margin-top: 10px !important;
+
+}
+.slick-dots li.slick-active button:before {
+    
+    color: rgb(255, 0, 0) !important;
+}
+/********************  slide Center   ************************************/
+
+.center .slick-center .carte_image_infor{
+
+    transform: scale(1.1);
+    opacity:1;
+    z-index: 99;
+    transition: all 400ms ease-in-out;
+    pointer-events: visible;
+    
+}
+.center .carte_image_infor{
+    opacity: .8;
+    transform: scale(.95);
+    transition: .3s;
+    pointer-events: none;
+}
+
+@media screen and (max-width:1024px) {
+
+    /* .center .slick-center .carte_image_infor{
+
+        transform: scale(1.4,1.2);
+        opacity:1;
+        z-index: 99;
+        transition: all 400ms ease-in-out;
+        pointer-events: all;
+        
+        
+    } */
+    .center .carte_image_infor{
+        /* opacity: .8;
+        transform: scale(1.2,.95);
+        transition: .3s;
+        pointer-events: none; */
+        width: 100%;
+       
+      
+    }
+    
+}
+
+@media screen and (max-width:920px) {
+
+    .center .carte_image_infor{
+        opacity:1;
+        pointer-events: visible;
+    }
+    
+}
+
+@media screen and (max-width:700px) {
+
+    .center .carte_image_infor{
+        /* opacity:.8;
+        transform: scale(1); */
+        /* pointer-events:visible; */
+        width: 100%;
+    }
+}
+
