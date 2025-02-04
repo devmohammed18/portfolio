@@ -1,28 +1,21 @@
 
-import pzzapizza from '../../public/images/pizzapizza.PNG'
-import pizzahot from '../../public/images/pizzahut.PNG'
-import pizzadominos from '../../public/images/pizzadominos.PNG'
+import construction from '../../public/images/construction.PNG'
+import ecommerce from '../../public/images/e-commerce.PNG'
 import portfolio from '../../public/images/portfolio.PNG'
 
  const Jobs =[
                 {id:1,
-                title:'pzzapizza',
-                image: pzzapizza,
-                desc:"Pizza Pizza Royalty Corporation est une chaîne canadienne de pizzerias implantée principalement dans la province de l'Ontario. Pizza Pizza a son siège à Etobicoke, Toronto.",
-                 url:'https://www.pizzapizza.ca/store/3/delivery?utm_source=google&utm_medium=local&utm_campaign=google-local'
+                title:'site de conctruction',
+                image:construction,
+                desc:"Ce site web présente les services de construction que je propose, ainsi que les projets réalisés.Le site a été conçu pour faciliter la navigation et offrir une expérience utilisateur fluide et professionnelle.",
+                 url:'https://construction-31ev.vercel.app'
                 },{id:2,
-                    title:'pizzahot',
-                 image:pizzahot,
-                 desc:"Pizza Hut est une chaîne de restauration rapide spécialisée dans la préparation et livraison de pizzas. Elle est implantée dans de très nombreux pays, notamment en Amérique du Nord et en Europe",
-                 url:'https://www.pizzahut.ca/'
+                    title:'site e-commerce',
+                 image:ecommerce,
+                 desc:"Ce site e-commerce que j'ai développé permet une expérience d'achat en ligne . Il offre une interface utilisateur claire et conviviale, permettant aux clients de naviguer facilement . Le processus de commande est simplifié, avec des options de paiement sécurisé . ",
+                 url:'https://e-commerce-chi-teal-19.vercel.app'
                 },{
                     id:3,
-                title:'pizzadominos',
-                image:pizzadominos,
-                desc:"Domino's Pizza est une multinationale américaine de la restauration rapide spécialisée dans la préparation et la livraison de pizza",
-                url:'https://www.dominos.ca/fr/'
-                },{
-                    id:4,
                 title:'portfolio',
                 desc:"Frontend devloper with experience building website. I specialize in ReactJS. Tailwind Css and Htmel. My role is write and style the front-end componenet and deliver quqlity work",
                 image:portfolio,

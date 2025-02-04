@@ -1,7 +1,7 @@
 
 
 .banner{
-    background-color:hsl(240, 100%, 50%); 
+    background-color:hsl(240, 100%, 27%); 
     
 }
 .imformation_image_profil{
@@ -11,7 +11,7 @@
 
 border:1px solid red;
 
-background-color:hsl(240, 100%, 50%); 
+background-color:hsl(240, 100%, 27%); 
 
 width: 100%;
 min-height: 100vh; 

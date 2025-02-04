@@ -25,7 +25,7 @@ module.exports = {
 
       colors:{
         bg_dark:'hsl(240, 100%, 10%)',
-        bg_light:'hsl(240, 100%, 50%)',
+        bg_light:'hsl(240, 100%, 27%)',
         
       },
 
