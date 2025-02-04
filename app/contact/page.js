@@ -141,7 +141,7 @@ if(Object.keys(errors_validation).length=== 0){
         
         <motion.div 
             variants={variantsPanale}
-            className=" sm:w-full sm:flex-col sm:items-center  flex justify-end items-start text-white w-4/5 border-2 border-solid border-red-600 shadow-lg mb-20 rounded-xl ">
+            className=" sm:w-full sm:flex-col sm:items-center  flex justify-end items-start text-white w-4/5 border-0 border-solid border-red-600 shadow-lg mb-20 rounded-xl ">
 
             <motion.div
                variants={variantsInformation}

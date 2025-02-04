@@ -69,7 +69,7 @@ function About() {
                 <span className='text-sm font-semibold'>My Introduction</span>
         </motion.div>
       
-        <div className='md:flex-col sm:flex-col sm:gap-4 md:gap-4 w-4/5 h-4/5 flex justify-between items-center  border border-red-950 border-solid py-10' >
+        <div className='md:flex-col sm:flex-col sm:gap-4 md:gap-4 w-4/5 h-4/5 flex justify-between items-center  border-0 border-red-950 border-solid py-10' >
             
             <motion.div 
                variants={variantsImage}

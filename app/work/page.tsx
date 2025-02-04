@@ -43,7 +43,7 @@ const variantsSlide={
     
         <motion.div 
            variants={variantsSlide}
-           className='md:w-4/5 sm:w-full container w-1/2 h-80 flex flex-col justify-center rounded-md border-2 border-solid border-red-700 mx-auto'
+           className='md:w-4/5 sm:w-full container w-1/2 h-80 flex flex-col justify-center rounded-md border-0 border-solid border-red-700 mx-auto'
            style={{opacity:'5%'}}>
            
            <SliderWork showDesc={showDesc} setShowDesc={setShowDesc} toggle={toggle} setToggle={setToggle} />  
