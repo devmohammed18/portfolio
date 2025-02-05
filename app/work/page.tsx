@@ -2,7 +2,7 @@
 'use client';
 import { useState } from "react";
 
-import SliderWork from '../components/sliderwork/sliderWork'
+import SliderWork from './_component/slidework/sliderWork'
 import {motion} from 'framer-motion'
 const Work = () => {
 /*********************** Variants for Animation******************** */

@@ -8,8 +8,8 @@ import { FaLaptopCode } from 'react-icons/fa';
 import { FaPaintBrush } from 'react-icons/fa';
 import { IoIosArrowRoundForward } from "react-icons/io";
 import { motion } from 'framer-motion';
-import DetailsDevloper from '../components/details_services/detailsDevloper';
-import DetailsDesigne from '../components/details_services/detailsDesigne';
+import DetailsDevloper from './_components/detailsDevloper';
+import DetailsDesigne from './_components/detailsDesigne';
 
 
 
