@@ -86,10 +86,10 @@ function Home() {
                
                 
                 
-                className='sm:w-4/5 md:w-4/5  w-2/6 flex justify-center items-center border-2 border-solid border-red-600' >
+                className='sm:w-4/5 md:w-4/5  w-2/6 flex justify-center items-center border-0 border-solid border-red-600' >
                     
                     {/* <Image className='rounded-full z-10 w-64 h-64 sm:w-72 sm:h-72 md:w-96 md:h-96' src={image_profil} alt='imageprofil'   /> */}
-                    <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 247 247">
+                    <svg className="w-full h-auto max-w-xs" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 247 247">
                         <defs>
                             <style>
                             {`.cls-1{fill:#FFFFFF;}.cls-2{fill:#FFFFFF;}.cls-3{fill:none;stroke:#FFFFFF;stroke-miterlimit:10;stroke-width:4px;}`}
