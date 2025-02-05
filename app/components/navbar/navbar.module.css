@@ -9,7 +9,7 @@
     margin: auto;
     padding: 30px 40px 30px 40px ;
     height: 70px;
-    border: 1px solid white;
+    border-bottom: 1px solid white;
     
     background-color:hsl(240, 100%, 27%);; 
 
