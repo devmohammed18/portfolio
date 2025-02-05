@@ -31,7 +31,7 @@ const variantsSlide={
       variants={variantsFrame}
       initial='hidden'
       animate='visible'
-      className='min-h-svh pb-20  w-full flex justify-start  border-0 border-solid border-red-900 items-center flex-col bg-bg_light dark:bg-bgclear   text-white dark:bg-bg_dark ease-in-out duration-200  ' >
+      className='min-h-lvh pb-20  w-full flex justify-start  border-0 border-solid border-red-900 items-center flex-col bg-bg_light dark:bg-bgclear   text-white dark:bg-bg_dark ease-in-out duration-200  ' >
 
         <motion.div 
           
