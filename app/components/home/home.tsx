@@ -37,7 +37,7 @@ function Home() {
             scale: [1, 1.2, 1.2, 1, 1],
             rotate: [0, 0, 270, 270, 0],
             borderRadius: ["10%", "10%", "50%", "50%", "20%"],
-            transition:{ type:'tween',duration:2}
+            transition:{ type:'tween',duration:1}
           },
         
      
@@ -126,7 +126,7 @@ function Home() {
                             <motion.h1 
                             variants={variantsTextProfil}
                          
-                            className=' text-xl px-0  capitalize md:text-3xl sm:text-lg '> i'm a <span className='text-red-600 text-2xl'>Frante web</span> devloper
+                            className=' text-xl px-0 md:text-3xl capitalize '> I'm a <span className='text-red-600 text-lg '>front-end web</span> developer
                             
                             </motion.h1>
                         
@@ -149,7 +149,8 @@ function Home() {
                                 </motion.div>
                                 
                                 <motion.div variants={variantsTextProfil}  whileHover={{scale:1.2}} transition={{duration:0.2}}>
-                                      <Link href='#' className={styles.social}><FaGithub className='text-lg sm:text-2xl md:text-4xl '  /></Link>
+                                      {/* <Link href='https://github.com/devmohammed18' className={styles.social}><FaGithub className='text-lg sm:text-2xl md:text-4xl '  /></Link> */}
+                                      <button className={styles.social}  onClick={()=>{window.open(process.env.NEXT_PUBLIC_GIT,'_blank')}}  > <FaGithub className='text-lg sm:text-2xl md:text-4xl '  /> </button>
                                 </motion.div>
                             </motion.li>
                         </ul>

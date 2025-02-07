@@ -17,7 +17,7 @@ import portfolio from '../../public/images/portfolio.PNG'
                 },{
                     id:3,
                 title:'portfolio',
-                desc:"Frontend devloper with experience building website. I specialize in ReactJS. Tailwind Css and Htmel. My role is write and style the front-end componenet and deliver quqlity work",
+                desc:"  Frontend developer with experience in building websites.I specialize in ReactJS, Tailwind CSS, and HTML. My role is to write and style the front-end components and deliver quality work.",
                 image:portfolio,
                     url:'https://portfolio-f378.vercel.app/'
                 }

@@ -80,13 +80,15 @@ function About() {
             <motion.div  
                 variants={variantsParghraphe}
                 className='sm:w-4/5 sm:text-lg sm:px-0 md:text-xl md:px-0 md:w-4/5 flex flex-col  leading-relaxed gap-4 items-start w-2/5 h-full text-xl text-justify pt-5 pl-4 pr-8 border-0 border-solid border-red-700'>
-                <p>Frontend devloper with experience building website.  I specialize in ReactJS. Tailwind Css and Htmel. 
-                  My role is write and style the front-end componenet and deliver quqlity work.
+                <p>Frontend developer with experience in building websites.<br/> 
+                   I specialize in ReactJS, Tailwind CSS, and HTML. My role is to write and style the front-end components and deliver quality work.
                 </p>
 
                 <motion.button 
                    variants={variantsButton}
-                   onClick={handleDownload}  className='sm:w-1/2 md:w-1/2 sm:text-sm md:text-sm sm:px-0 sm:justify-around w-1/2 flex justify-between items-center text-lg  border-2 py-2 bg-red-600 px-3 border-solid rounded-3xl border-red-600 hover:bg-transparent  '> Download CV <span><LuDownload /></span></motion.button>
+                   onClick={handleDownload}  
+                   className='sm:w-3/5 md:w-1/2 sm:text-sm  sm:px-0 sm:justify-around 
+                               w-1/2 h-10 flex justify-between items-center text-base  border-2 py-3 bg-red-600 px-3 border-solid rounded-3xl border-red-600 hover:bg-transparent  '> Download CV <span><LuDownload /></span></motion.button>
 
             </motion.div>
       

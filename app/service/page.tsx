@@ -75,9 +75,9 @@ const variantsDesiner:any={
             className=' flex flex-col  items-start pt-24 pb-7 pr-14 pl-6 gap-4 border-2 border-white border-solid rounded-md cursor-pointer'>
 
              <span className='text-xl' ><FaLaptopCode /></span>
-             <div className='flex flex-col  '>
-               <h1 className='text-3xl '>Frontend </h1>
-               <h1 className='text-3xl '>Devloper</h1>
+             <div className='flex flex-col capitalize '>
+               <h1 className='text-3xl '>front-end </h1>
+               <h1 className='text-3xl '>developer</h1>
              </div>
              <button  className='flex items-center justify-center mt-4 gap-1 text-red-600 cursor-pointer px-2  rounded-2xl 
              '  onClick={()=>{setClose(true);setShowDetails(1)}} >

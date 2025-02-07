@@ -27,9 +27,7 @@ function DetailsDevloper({setShowDetails,close,setClose}) {
                 <div className='flex justify-center items-center gap-1'><FcOk />
                         <h1>Use React js to devlop UI intrface</h1>
                 </div>
-                <div className='flex justify-center items-center gap-1'><FcOk />
-                        <h1>Use React js to devlop UI intrface</h1>
-                </div>
+                
                 <div className='flex justify-center items-center gap-1'><FcOk />
                         <h1>Mange the state of the application with redux</h1>
                 </div>
@@ -38,7 +36,7 @@ function DetailsDevloper({setShowDetails,close,setClose}) {
                 </div>
                     
                 <div className='flex justify-center items-center gap-1'><FcOk />
-                    <h1>Consuming Api s</h1>
+                    <h1>Consuming Api(s)</h1>
                 </div>
                     
                 <span className='absolute top-2 right-2 text-red-600 text-xl' onClick={()=>{setClose(false);setShowDetails(0)}}><HiXCircle /></span>

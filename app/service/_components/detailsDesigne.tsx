@@ -25,9 +25,7 @@ function DetailsDesigne({setShowDetails,close,setClose}) {
                 <div className='flex justify-center items-center gap-1'><FcOk />
                         <h1>Create responsive web site with tailwind Css</h1>
                 </div>
-                <div className='flex justify-center items-center gap-1'><FcOk />
-                        <h1>Create use cose and follow  diagrama</h1>
-                </div>
+               
                 <div className='flex justify-center items-center gap-1'><FcOk />
                     <h1>Animation web site with Css and framer motion</h1>
                 </div>

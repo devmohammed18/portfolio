@@ -84,6 +84,8 @@ const variantsFramwork={
                         <li  className='s ml-7 h-1 w-72 bg-red-700' ></li>
                         <li className='uppercase ml-7 py-2 '> javascript</li>
                         <li  className=' ml-7 h-1 w-72 bg-red-700' ></li>
+                        <li className='uppercase ml-7 py-2 '> typescript</li>
+                        <li  className=' ml-7 h-1 w-72 bg-red-700' ></li>
                         <li className=' uppercase ml-7 py-2 '> react js</li>
                         <li  className=' ml-7 h-1 w-72 bg-red-700' ></li>
                     </motion.ul>
@@ -118,11 +120,11 @@ const variantsFramwork={
                         initial="hidden"
                         animate="visible" 
                         transition={{duration:2}}
-
+                        className="uppercaze"
                     >
                         <li className='uppercase ml-8  py-2 '>next js</li>
                         <li  className=' ml-8 h-1 w-72 bg-red-700' ></li>
-                        <li className='uppercase ml-8 py-2 '> Tailwind</li>
+                        <li className='uppercase ml-8 py-2 '>tailwind</li>
                         <li  className='ml-8 h-1 w-72 bg-red-700' ></li>
                     </motion.ul> }
                 </motion.ul>
