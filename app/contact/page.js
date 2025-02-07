@@ -201,11 +201,11 @@ if(Object.keys(errors_validation).length=== 0){
                     </Suspense> 
                     
                     <div className="flex space-x-4">
-                      <motion.button whileHover={{scale:1.1}} type="submit"  className='bg-green-600 flex justify-center  w-32 p-2 rounded-lg tracking-wide bordre-none  hover:bg-green-500' disabled={loading}> 
+                      <motion.button whileHover={{scale:1.1}} type="submit"  className='bg-green-600 text-lg border-solid flex justify-center  w-32 p-2 rounded-3xl tracking-wide bordre-none  hover:bg-green-500' disabled={loading}> 
                       
                       {loading?<LuRefreshCw className="animate-spin ease-in h-5 w-5 mr-3" />:''} <span>Submit</span> </motion.button>
                     
-                      <motion.button whileHover={{scale:1.1}}  type='button'className='bg-red-600 w-32 p-2 rounded-lg border-none hover:bg-red-500 transition-all' onClick={handleCancel} > Cancel </motion.button>
+                      <motion.button whileHover={{scale:1.1}}  type='button'className='bg-red-600 w-32 p-2 text-lg border-solid rounded-3xl border-none hover:bg-red-500 transition-all' onClick={handleCancel} > Cancel </motion.button>
                     </div>
                 </form>
                 

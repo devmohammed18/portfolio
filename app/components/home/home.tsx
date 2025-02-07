@@ -128,7 +128,7 @@ function Home() {
                          
                             className=' text-xl px-0 md:text-3xl capitalize '> I'm a <span className='text-red-600 text-lg '>front-end web</span> developer
                             
-                            </motion.h1>
+                            </motion.h1><br />
                         
                             <motion.button 
                                     variants={variantsTextProfil}
